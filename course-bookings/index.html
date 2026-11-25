@@ -1,0 +1,864 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Course bookings 2025–26</title>
+<style>:root{--font-anthropic-sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--font-anthropic-serif:Georgia,"Times New Roman",serif;
+--cds-gap-xs:4px;--cds-gap-sm:8px;--cds-gap-md:12px;--cds-gap-xl:28px;--cds-pad-lg:16px;--cds-radius:8px;
+--cds-font-size-title:28px;--cds-font-size-heading:17px;--cds-font-size-body:15px;--cds-font-size-caption:13px;--cds-font-weight-medium:600;
+--color-bg:#faf9f5;--color-panel:#ffffff;--color-fg:#1f1e1d;--color-fg-muted:#6b6a66;--color-border-line:#e3e1da;--color-ok:#2e7d4f;--color-bad:#b3402e;
+--cds-text-secondary:#6b6a66;--cds-surface-popover:#ffffff;--cds-border:#e3e1da;--cds-shadow-popover:0 4px 14px rgba(0,0,0,.12);--cds-chart-grid:#ecebe6;--cds-chart-axis:#b5b3ac;
+--series-1:#c96442;--series-2:#5a7fb5}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--color-bg:#1f1e1d;--color-panel:#2a2927;--color-fg:#f0eee6;--color-fg-muted:#a9a69e;--color-border-line:#3d3b37;--color-ok:#6cc38f;--color-bad:#e8846f;--cds-text-secondary:#a9a69e;--cds-surface-popover:#2f2e2b;--cds-border:#3d3b37;--cds-shadow-popover:0 4px 14px rgba(0,0,0,.5);--cds-chart-grid:#35332f;--cds-chart-axis:#5a5852;--series-1:#d97757;--series-2:#7fa3d6}}
+:root[data-theme="dark"]{--color-bg:#1f1e1d;--color-panel:#2a2927;--color-fg:#f0eee6;--color-fg-muted:#a9a69e;--color-border-line:#3d3b37;--color-ok:#6cc38f;--color-bad:#e8846f;--cds-text-secondary:#a9a69e;--cds-surface-popover:#2f2e2b;--cds-border:#3d3b37;--cds-shadow-popover:0 4px 14px rgba(0,0,0,.5);--cds-chart-grid:#35332f;--cds-chart-axis:#5a5852;--series-1:#d97757;--series-2:#7fa3d6}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:var(--font-anthropic-sans)}
+.wrap{max-width:1100px;margin:0 auto;padding:24px 16px 48px}
+.dash-select{font:inherit;font-size:var(--cds-font-size-body);color:var(--color-fg);background-color:var(--color-bg);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:6px 8px;min-height:34px}
+
+.cb { display: flex; flex-direction: column; gap: var(--cds-gap-xl); font-family: var(--font-anthropic-sans); color: var(--color-fg); }
+.cb h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; }
+.cb h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0 0 var(--cds-gap-xs); }
+.cb-sub { margin: 0 0 var(--cds-gap-sm); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.cb-lede { margin: var(--cds-gap-xs) 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); line-height: 1.5; }
+.cb-lede b { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); font-variant-numeric: tabular-nums; }
+.cb-filters { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); align-items: flex-end; }
+.cb-field { display: flex; flex-direction: column; gap: 4px; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.cb-input { font: inherit; font-size: var(--cds-font-size-body); color: var(--color-fg); background-color: var(--color-bg); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: 6px 8px; min-height: 34px; }
+.cb-btn { font: inherit; font-size: var(--cds-font-size-body); color: var(--color-fg); background: transparent; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: 6px 12px; min-height: 34px; cursor: pointer; }
+.cb-win { margin: 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.cb-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--cds-gap-md); }
+.cb-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.cb-card-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.cb-card-value { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; }
+.cb-card-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+.cb-panel { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; }
+.cb-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--cds-gap-md); }
+.cb-chart { min-height: 230px; position: relative; }
+.cb-chart svg { display: block; max-width: 100%; }
+.cb-tick { font-size: var(--cds-font-size-caption); fill: var(--cds-text-secondary); font-variant-numeric: tabular-nums; }
+.cb-barlab { font-size: var(--cds-font-size-caption); fill: var(--color-fg); font-variant-numeric: tabular-nums; }
+.cb-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); box-shadow: var(--cds-shadow-popover); color: var(--cds-text-secondary); border-radius: var(--cds-radius); padding: 6px 8px; font-size: var(--cds-font-size-caption); white-space: nowrap; z-index: 2; }
+.cb-tip b { display: block; color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.cb-rank { margin-bottom: var(--cds-gap-sm); }
+.cb-rank-head { display: flex; justify-content: space-between; gap: var(--cds-gap-sm); font-size: var(--cds-font-size-body); }
+.cb-rank-val { font-variant-numeric: tabular-nums; }
+.cb-track { height: 8px; background: var(--cds-chart-grid); border-radius: 4px; margin-top: 4px; overflow: hidden; }
+.cb-fill { height: 100%; border-radius: 4px; }
+.cb-scroll { overflow: auto; max-height: 420px; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); }
+.cb-scroll-x { overflow-x: auto; }
+.cb table { border-collapse: collapse; width: 100%; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.cb th, .cb td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+.cb th { position: sticky; top: 0; background: var(--color-panel); font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); z-index: 1; }
+.cb .num { text-align: right; }
+.cb .cb-up { color: var(--color-ok); }
+.cb .cb-down { color: var(--color-bad); }
+.cb .cb-cancelled td { color: var(--color-fg-muted); }
+.cb-empty { color: var(--color-fg-muted); font-size: var(--cds-font-size-body); }
+details.cb-notes { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.5; }
+details.cb-notes summary { cursor: pointer; }
+[data-dash-source-state=refreshing] { opacity: .5; }
+</style>
+</head>
+<body>
+<main class="wrap">
+<div class="cb">
+  <header id="top">
+    <h1>Course bookings, 2025–26</h1>
+    <p class="cb-lede">Confirmed revenue is <b data-draw="s_rev">—</b> (<b data-draw="s_scope">—</b>). Top course in this selection: <b data-draw="s_top">—</b>. Cancelled bookings: <b data-draw="s_cancel">—</b>.</p>
+  </header>
+
+  <section id="filters" aria-label="Filters">
+    <div class="cb-filters">
+      <label class="cb-field">Course
+        <select class="dash-select" data-draw="course_select" data-source="clean" aria-label="Course"></select>
+      </label>
+      <label class="cb-field">From
+        <input class="cb-input" type="date" data-draw="from_date" data-source="clean" aria-label="From date">
+      </label>
+      <label class="cb-field">To
+        <input class="cb-input" type="date" data-draw="to_date" data-source="clean" aria-label="To date">
+      </label>
+      <button class="cb-btn" id="cb-reset" type="button">Reset</button>
+    </div>
+    <p class="cb-win">Showing: <span data-draw="win">—</span></p>
+  </section>
+
+  <section id="headlines" aria-label="Headline numbers">
+    <div class="cb-cards">
+      <div class="cb-card" id="card-revenue"><div class="cb-card-label">Confirmed revenue</div><div class="cb-card-value" data-draw="k_rev" data-source="clean">—</div><div class="cb-card-note" data-draw="k_rev_note">—</div></div>
+      <div class="cb-card" id="card-bookings"><div class="cb-card-label">Confirmed bookings</div><div class="cb-card-value" data-draw="k_bookings" data-source="clean">—</div><div class="cb-card-note" data-draw="k_bookings_note">—</div></div>
+      <div class="cb-card" id="card-delegates"><div class="cb-card-label">Delegates (confirmed)</div><div class="cb-card-value" data-draw="k_delegates" data-source="clean">—</div><div class="cb-card-note" data-draw="k_delegates_note">—</div></div>
+      <div class="cb-card" id="card-cancelled"><div class="cb-card-label">Cancelled bookings</div><div class="cb-card-value" data-draw="k_cancel" data-source="clean">—</div><div class="cb-card-note" data-draw="k_cancel_note">—</div></div>
+    </div>
+  </section>
+
+  <section id="monthly" class="cb-panel">
+    <h2>Confirmed revenue by month</h2>
+    <p class="cb-sub">Confirmed bookings only, by booking date.</p>
+    <div class="cb-chart" data-draw="chart_rev" data-source="clean">—</div>
+  </section>
+
+  <div class="cb-grid">
+    <section id="courses" class="cb-panel">
+      <h2>Revenue by course</h2>
+      <p class="cb-sub">Confirmed revenue, highest first.</p>
+      <div data-draw="course_rank" data-source="clean">—</div>
+    </section>
+    <section id="cancellations" class="cb-panel">
+      <h2>Cancelled bookings by month</h2>
+      <p class="cb-sub">Number of bookings cancelled, by booking date.</p>
+      <div class="cb-chart" data-draw="chart_cancel" data-source="clean">—</div>
+    </section>
+  </div>
+
+  <section id="halves" class="cb-panel">
+    <h2>Growth or fall, Oct–Mar to Apr–Sep</h2>
+    <p class="cb-sub">Confirmed revenue by half-year, biggest growth first. The course filter applies; the date range does not.</p>
+    <div class="cb-scroll-x">
+      <table data-source="halves" data-row-key="course">
+        <thead><tr>
+          <th data-field="course">Course</th>
+          <th class="num" data-field="oct_mar">Oct–Mar (£)</th>
+          <th class="num" data-field="apr_sep">Apr–Sep (£)</th>
+          <th class="num" data-field="change">Change (£)</th>
+          <th class="num" data-field="change_pct">Change (%)</th>
+        </tr></thead>
+        <tbody data-draw="halves_body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="bookings">
+    <h2>Bookings</h2>
+    <p class="cb-sub"><span data-draw="bookings_count">—</span> Newest first, duplicates removed.</p>
+    <div class="cb-scroll">
+      <table data-source="clean" data-row-key="ref">
+        <thead><tr>
+          <th data-field="ref">Ref</th>
+          <th data-field="date">Date</th>
+          <th data-field="course">Course</th>
+          <th data-field="delivery">Delivery</th>
+          <th class="num" data-field="delegates">Delegates</th>
+          <th class="num" data-field="total">Total (£)</th>
+          <th data-field="sector">Sector</th>
+          <th data-field="owner">Sales owner</th>
+          <th data-field="status">Status</th>
+        </tr></thead>
+        <tbody data-draw="bookings_body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <details class="cb-notes" id="notes">
+    <summary>How the numbers are worked out</summary>
+    <p>Revenue is the Total (£) of confirmed bookings only. Six rows that repeated an earlier row exactly were removed first. Cancelled bookings are counted by their booking date. Half-years are Oct–Mar and Apr–Sep.</p>
+    <p>Tidying done before the data was attached: course names that differed only by capitals or spaces were merged, "PM Essentials" was read as Project Management Essentials, two dates written as day/month/year were converted, and four blank totals were filled as delegates × price per delegate.</p>
+  </details>
+</div>
+
+
+</main>
+<script type="text/csv" id="bookings-csv">
+ref,date,course,delivery,delegates,price,total,sector,owner,status
+BK-10405,2025-10-01,Presentation Skills,Online,1,345,345,Manufacturing,Dev Patel,Confirmed
+BK-10437,2025-10-01,Project Management Essentials,Classroom,4,595,2380,Healthcare,Ben Hollis,Confirmed
+BK-10442,2025-10-01,Claude for Business,Online,1,495,495,Finance,Chloe Martin,Confirmed
+BK-10443,2025-10-01,Leadership Foundations,Online,3,695,2085,Public sector,Dev Patel,Confirmed
+BK-10436,2025-10-04,Presentation Skills,Classroom,3,345,1035,Manufacturing,Chloe Martin,Confirmed
+BK-10401,2025-10-11,Leadership Foundations,Classroom,1,695,695,Education,Dev Patel,Confirmed
+BK-10408,2025-10-11,Excel Advanced,Online,3,395,1185,Manufacturing,Amira Khan,Confirmed
+BK-10408,2025-10-11,Excel Advanced,Online,3,395,1185,Manufacturing,Amira Khan,Confirmed
+BK-10411,2025-10-11,Excel for Beginners,Classroom,3,295,885,Manufacturing,Chloe Martin,Confirmed
+BK-10413,2025-10-14,Leadership Foundations,Classroom,5,695,3475,Retail,Chloe Martin,Confirmed
+BK-10422,2025-10-14,Excel Advanced,In-house,6,395,2370,Manufacturing,Dev Patel,Confirmed
+BK-10435,2025-10-15,Claude for Business,Online,4,495,1980,Public sector,Ben Hollis,Confirmed
+BK-10417,2025-10-16,Claude for Business,In-house,7,495,3465,Retail,Dev Patel,Confirmed
+BK-10425,2025-10-16,Project Management Essentials,Online,4,595,2380,Retail,Dev Patel,Confirmed
+BK-10434,2025-10-16,Claude for Business,Classroom,4,495,1980,Healthcare,Dev Patel,Confirmed
+BK-10404,2025-10-18,Claude for Business,Classroom,4,495,1980,Education,Dev Patel,Confirmed
+BK-10420,2025-10-18,Excel Advanced,Online,3,395,1185,Manufacturing,Dev Patel,Confirmed
+BK-10415,2025-10-19,Claude for Business,Online,5,495,2475,Education,Ben Hollis,Confirmed
+BK-10439,2025-10-19,Excel for Beginners,Classroom,5,295,1475,Retail,Ben Hollis,Confirmed
+BK-10445,2025-10-19,Presentation Skills,Online,5,345,1725,Retail,Chloe Martin,Confirmed
+BK-10447,2025-10-20,Excel Advanced,Classroom,5,395,1975,Healthcare,Ben Hollis,Confirmed
+BK-10448,2025-10-21,Presentation Skills,In-house,13,345,4485,Manufacturing,Ben Hollis,Confirmed
+BK-10428,2025-10-22,Claude for Business,In-house,11,495,5445,Public sector,Dev Patel,Confirmed
+BK-10431,2025-10-23,Customer Service Excellence,Classroom,4,275,1100,Healthcare,Dev Patel,Confirmed
+BK-10450,2025-10-23,Time Management,Online,5,245,1225,Education,Ben Hollis,Confirmed
+BK-10450,2025-10-23,Time Management,Online,5,245,1225,Education,Ben Hollis,Confirmed
+BK-10440,2025-10-26,Customer Service Excellence,Classroom,5,275,1375,Healthcare,Ben Hollis,Confirmed
+BK-10416,2025-10-27,Excel for Beginners,Classroom,1,295,295,Retail,Dev Patel,Confirmed
+BK-10412,2025-10-28,Time Management,Online,4,245,980,Education,Dev Patel,Confirmed
+BK-10482,2025-11-01,Presentation Skills,Online,5,345,1725,Public sector,Ben Hollis,Confirmed
+BK-10470,2025-11-02,Excel for Beginners,Online,1,295,295,Education,Chloe Martin,Confirmed
+BK-10495,2025-11-02,Claude for Business,Classroom,2,495,990,Retail,Chloe Martin,Confirmed
+BK-10485,2025-11-04,Excel for Beginners,Online,3,295,885,Manufacturing,Chloe Martin,Confirmed
+BK-10453,2025-11-06,Project Management Essentials,Online,4,595,2380,Retail,Chloe Martin,Cancelled
+BK-10455,2025-11-06,Project Management Essentials,Online,1,595,595,Education,Chloe Martin,Confirmed
+BK-10487,2025-11-06,Presentation Skills,Classroom,5,345,1725,Retail,Chloe Martin,Confirmed
+BK-10475,2025-11-07,Presentation Skills,Online,1,345,345,Education,Chloe Martin,Confirmed
+BK-10504,2025-11-07,Claude for Business,Classroom,3,495,1485,Retail,Dev Patel,Confirmed
+BK-10488,2025-11-08,Excel for Beginners,Online,4,295,1180,Finance,Ben Hollis,Confirmed
+BK-10477,2025-11-10,Claude for Business,Online,4,495,1980,Finance,Chloe Martin,Confirmed
+BK-10501,2025-11-10,Project Management Essentials,Classroom,2,595,1190,Public sector,Amira Khan,Confirmed
+BK-10469,2025-11-11,Excel for Beginners,Online,1,295,295,Finance,Dev Patel,Confirmed
+BK-10486,2025-11-14,Presentation Skills,Online,4,345,1380,Retail,Ben Hollis,Confirmed
+BK-10500,2025-11-16,Claude for Business,In-house,14,495,6930,Public sector,Ben Hollis,Confirmed
+BK-10507,2025-11-17,Customer Service Excellence,Classroom,5,275,1375,Healthcare,Dev Patel,Confirmed
+BK-10458,2025-11-18,Customer Service Excellence,In-house,8,275,2200,Finance,Ben Hollis,Cancelled
+BK-10460,2025-11-18,Time Management,Classroom,2,245,490,Manufacturing,Chloe Martin,Confirmed
+BK-10496,2025-11-18,Customer Service Excellence,Online,2,275,550,Retail,Dev Patel,Confirmed
+BK-10509,2025-11-18,Excel Advanced,Online,5,395,1975,Healthcare,Ben Hollis,Confirmed
+BK-10491,2025-11-19,Excel for Beginners,Online,1,295,295,Education,Chloe Martin,Confirmed
+BK-10493,2025-11-21,Leadership Foundations,Classroom,1,695,695,Public sector,Ben Hollis,Confirmed
+BK-10451,2025-11-22,Claude for Business,Online,4,495,1980,Public sector,Dev Patel,Confirmed
+BK-10479,2025-11-24,Claude for Business,Classroom,1,495,495,Retail,Chloe Martin,Confirmed
+BK-10463,2025-11-25,Presentation Skills,Online,3,345,1035,Manufacturing,Ben Hollis,Confirmed
+BK-10472,2025-11-25,Leadership Foundations,Classroom,5,695,3475,Retail,Chloe Martin,Confirmed
+BK-10464,2025-11-26,Excel Advanced,In-house,8,395,3160,Public sector,Chloe Martin,Confirmed
+BK-10467,2025-11-26,Excel Advanced,Classroom,5,395,1975,Education,Amira Khan,Confirmed
+BK-10499,2025-11-26,Leadership Foundations,Classroom,5,695,3475,Healthcare,Dev Patel,Confirmed
+BK-10456,2025-11-28,Excel Advanced,Online,1,395,395,Manufacturing,Chloe Martin,Confirmed
+BK-10517,2025-12-03,Project Management Essentials,Online,2,595,1190,Healthcare,Ben Hollis,Confirmed
+BK-10521,2025-12-04,Project Management Essentials,In-house,7,595,4165,Healthcare,Chloe Martin,Confirmed
+BK-10526,2025-12-09,Customer Service Excellence,Online,3,275,825,Education,Chloe Martin,Confirmed
+BK-10511,2025-12-10,Presentation Skills,Online,4,345,1380,Manufacturing,Amira Khan,Confirmed
+BK-10515,2025-12-11,Presentation Skills,Online,1,345,345,Manufacturing,Amira Khan,Confirmed
+BK-10518,2025-12-11,Leadership Foundations,In-house,7,695,4865,Education,Chloe Martin,Confirmed
+BK-10531,2025-12-12,Customer Service Excellence,Online,5,275,1375,Healthcare,Dev Patel,Confirmed
+BK-10540,2025-12-12,Time Management,Online,4,245,980,Public sector,Chloe Martin,Confirmed
+BK-10537,2025-12-18,Customer Service Excellence,Online,5,275,1375,Retail,Dev Patel,Confirmed
+BK-10538,2025-12-18,Time Management,Classroom,3,245,735,Retail,Ben Hollis,Confirmed
+BK-10534,2025-12-19,Time Management,Online,3,245,735,Public sector,Chloe Martin,Confirmed
+BK-10514,2025-12-21,Leadership Foundations,Online,5,695,3475,Education,Amira Khan,Confirmed
+BK-10528,2025-12-24,Time Management,Online,3,245,735,Retail,Ben Hollis,Confirmed
+BK-10524,2025-12-27,Leadership Foundations,Classroom,1,695,695,Public sector,Dev Patel,Confirmed
+BK-10536,2025-12-27,Claude for Business,Online,5,495,2475,Healthcare,Chloe Martin,Confirmed
+BK-10536,2025-12-27,Claude for Business,Online,5,495,2475,Healthcare,Chloe Martin,Confirmed
+BK-10545,2026-01-01,Excel for Beginners,Online,1,295,295,Finance,Chloe Martin,Confirmed
+BK-10551,2026-01-01,Excel Advanced,Online,2,395,790,Education,Ben Hollis,Confirmed
+BK-10579,2026-01-01,Project Management Essentials,Classroom,5,595,2975,Manufacturing,Dev Patel,Confirmed
+BK-10562,2026-01-03,Claude for Business,In-house,11,495,5445,Manufacturing,Chloe Martin,Confirmed
+BK-10567,2026-01-04,Claude for Business,In-house,6,495,2970,Healthcare,Dev Patel,Confirmed
+BK-10564,2026-01-06,Excel for Beginners,Classroom,2,295,590,Education,Dev Patel,Confirmed
+BK-10557,2026-01-07,Project Management Essentials,Classroom,4,595,2380,Education,Amira Khan,Confirmed
+BK-10586,2026-01-07,Claude for Business,Online,4,495,1980,Healthcare,Ben Hollis,Confirmed
+BK-10580,2026-01-11,Excel for Beginners,Classroom,4,295,1180,Public sector,Chloe Martin,Confirmed
+BK-10576,2026-01-15,Excel for Beginners,Classroom,2,295,590,Retail,Dev Patel,Confirmed
+BK-10571,2026-01-18,Time Management,In-house,11,245,2695,Retail,Ben Hollis,Cancelled
+BK-10550,2026-01-20,Time Management,Classroom,1,245,245,Manufacturing,Ben Hollis,Confirmed
+BK-10572,2026-01-20,Presentation Skills,In-house,8,345,2760,Manufacturing,Amira Khan,Confirmed
+BK-10572,2026-01-20,Presentation Skills,In-house,8,345,2760,Manufacturing,Amira Khan,Confirmed
+BK-10553,2026-01-22,Time Management,Online,3,245,735,Finance,Dev Patel,Confirmed
+BK-10587,2026-01-22,Claude for Business,Online,2,495,990,Retail,Dev Patel,Confirmed
+BK-10543,2026-01-23,Excel Advanced,Online,5,395,1975,Retail,Dev Patel,Confirmed
+BK-10549,2026-01-23,Excel Advanced,Classroom,1,395,395,Healthcare,Dev Patel,Confirmed
+BK-10546,2026-01-25,Excel Advanced,Online,3,395,1185,Finance,Amira Khan,Confirmed
+BK-10555,2026-01-27,Excel Advanced,Classroom,2,395,790,Finance,Chloe Martin,Confirmed
+BK-10559,2026-01-28,Excel for Beginners,Classroom,5,295,1475,Finance,Dev Patel,Confirmed
+BK-10570,2026-01-28,Presentation Skills,Classroom,3,345,1035,Manufacturing,Dev Patel,Confirmed
+BK-10575,2026-01-28,Excel for Beginners,Classroom,2,295,590,Education,Chloe Martin,Confirmed
+BK-10583,2026-01-28,Time Management,In-house,10,245,2450,Public sector,Ben Hollis,Confirmed
+BK-10589,2026-01-28,Project Management Essentials,Online,3,595,1785,Retail,Dev Patel,Confirmed
+BK-10629,2026-02-01,Project Management Essentials,Classroom,4,595,2380,Healthcare,Ben Hollis,Confirmed
+BK-10602,2026-02-02,Excel for Beginners,Online,5,295,1475,Education,Amira Khan,Confirmed
+BK-10621,2026-02-02,Excel Advanced,In-house,14,395,5530,Retail,Amira Khan,Confirmed
+BK-10632,2026-02-03,Excel for Beginners,Online,2,295,590,Education,Ben Hollis,Cancelled
+BK-10618,2026-02-04,Presentation Skills,In-house,7,345,2415,Retail,Dev Patel,Confirmed
+BK-10595,2026-02-05,Excel for Beginners,Online,2,295,590,Retail,Dev Patel,Cancelled
+BK-10591,2026-02-06,Excel Advanced,Online,4,395,1580,Healthcare,Chloe Martin,Confirmed
+BK-10630,2026-02-06,Presentation Skills,Classroom,3,345,1035,Manufacturing,Ben Hollis,Confirmed
+BK-10590,2026-02-07,Customer Service Excellence,Online,1,275,275,Manufacturing,Ben Hollis,Confirmed
+BK-10620,2026-02-09,Customer Service Excellence,Online,3,275,825,Public sector,Chloe Martin,Confirmed
+BK-10626,2026-02-09,Excel for Beginners,Classroom,5,295,1475,Manufacturing,Ben Hollis,Confirmed
+BK-10624,2026-02-10,Excel for Beginners,Classroom,3,295,885,Finance,Amira Khan,Confirmed
+BK-10605,2026-02-11,Excel for Beginners,Online,1,295,295,Finance,Amira Khan,Confirmed
+BK-10613,2026-02-13,Time Management,Classroom,2,245,490,Education,Chloe Martin,Confirmed
+BK-10600,2026-02-15,Project Management Essentials,In-house,14,595,8330,Public sector,Chloe Martin,Confirmed
+BK-10608,2026-02-16,Excel Advanced,Classroom,4,395,1580,Retail,Ben Hollis,Confirmed
+BK-10598,2026-02-21,Presentation Skills,In-house,14,345,4830,Finance,Amira Khan,Confirmed
+BK-10623,2026-02-23,Leadership Foundations,In-house,6,695,4170,Healthcare,Dev Patel,Cancelled
+BK-10593,2026-02-24,Project Management Essentials,Online,5,595,2975,Finance,Chloe Martin,Confirmed
+BK-10606,2026-02-24,Claude for Business,Classroom,5,495,2475,Finance,Ben Hollis,Confirmed
+BK-10612,2026-02-25,Excel for Beginners,Online,4,295,1180,Public sector,Dev Patel,Confirmed
+BK-10615,2026-02-25,Project Management Essentials,Classroom,1,595,595,Education,Ben Hollis,Confirmed
+BK-10604,2026-02-26,Time Management,Classroom,4,245,980,Education,Amira Khan,Confirmed
+BK-10619,2026-02-26,Excel for Beginners,In-house,12,295,3540,Healthcare,Ben Hollis,Cancelled
+BK-10628,2026-02-27,Excel for Beginners,Online,5,295,1475,Public sector,Ben Hollis,Confirmed
+BK-10611,2026-02-28,Claude for Business,Online,4,495,1980,Healthcare,Dev Patel,Confirmed
+BK-10634,2026-02-28,Time Management,Classroom,3,245,735,Education,Amira Khan,Confirmed
+BK-10635,2026-03-01,Customer Service Excellence,Online,4,275,1100,Manufacturing,Chloe Martin,Confirmed
+BK-10646,2026-03-03,Excel for Beginners,Classroom,3,295,885,Finance,Amira Khan,Confirmed
+BK-10680,2026-03-03,Claude for Business,Online,4,495,1980,Education,Chloe Martin,Confirmed
+BK-10684,2026-03-03,Customer Service Excellence,Classroom,4,275,1100,Public sector,Amira Khan,Confirmed
+BK-10688,2026-03-03,Excel for Beginners,Online,1,295,295,Public sector,Dev Patel,Confirmed
+BK-10645,2026-03-04,Excel Advanced,Online,2,395,790,Education,Dev Patel,Confirmed
+BK-10653,2026-03-04,Presentation Skills,Online,2,345,690,Finance,Dev Patel,Cancelled
+BK-10640,2026-03-08,Claude for Business,Classroom,5,495,2475,Education,Ben Hollis,Confirmed
+BK-10687,2026-03-08,Excel for Beginners,Online,1,295,295,Education,Dev Patel,Confirmed
+BK-10660,2026-03-09,Project Management Essentials,In-house,9,595,5355,Finance,Amira Khan,Confirmed
+BK-10668,2026-03-10,Customer Service Excellence,Online,5,275,1375,Education,Chloe Martin,Confirmed
+BK-10638,2026-03-12,Excel for Beginners,Classroom,1,295,295,Healthcare,Amira Khan,Confirmed
+BK-10690,2026-03-12,Customer Service Excellence,In-house,12,275,3300,Manufacturing,Amira Khan,Confirmed
+BK-10677,2026-03-13,Leadership Foundations,In-house,12,695,8340,Finance,Amira Khan,Confirmed
+BK-10672,2026-03-14,Presentation Skills,Online,3,345,1035,Healthcare,Dev Patel,Confirmed
+BK-10697,2026-03-14,Claude for Business,In-house,10,495,4950,Education,Ben Hollis,Confirmed
+BK-10683,2026-03-17,Claude for Business,Classroom,4,495,1980,Finance,Amira Khan,Confirmed
+BK-10657,2026-03-18,Project Management Essentials,Classroom,3,595,1785,Education,Dev Patel,Confirmed
+BK-10648,2026-03-20,Project Management Essentials,Online,1,595,595,Public sector,Amira Khan,Confirmed
+BK-10663,2026-03-20,Customer Service Excellence,Online,4,275,1100,Healthcare,Dev Patel,Confirmed
+BK-10693,2026-03-20,Presentation Skills,Online,4,345,1380,Manufacturing,Ben Hollis,Confirmed
+BK-10665,2026-03-21,Leadership Foundations,Online,3,695,2085,Education,Chloe Martin,Confirmed
+BK-10692,2026-03-23,Presentation Skills,Online,1,345,345,Healthcare,Amira Khan,Confirmed
+BK-10642,2026-03-24,Presentation Skills,In-house,11,345,3795,Healthcare,Dev Patel,Confirmed
+BK-10695,2026-03-25,Excel for Beginners,In-house,7,295,2065,Education,Chloe Martin,Confirmed
+BK-10649,2026-03-27,Project Management Essentials,In-house,12,595,7140,Retail,Dev Patel,Cancelled
+BK-10652,2026-03-27,Project Management Essentials,Online,5,595,2975,Finance,Chloe Martin,Confirmed
+BK-10671,2026-03-27,Claude for Business,Classroom,3,495,1485,Education,Ben Hollis,Confirmed
+BK-10654,2026-03-28,Time Management,Online,1,245,245,Healthcare,Chloe Martin,Confirmed
+BK-10674,2026-03-28,Customer Service Excellence,In-house,7,275,1925,Healthcare,Dev Patel,Confirmed
+BK-10685,2026-03-28,Customer Service Excellence,In-house,11,275,3025,Public sector,Amira Khan,Confirmed
+BK-10716,2026-04-01,Project Management Essentials,Online,5,595,2975,Manufacturing,Chloe Martin,Confirmed
+BK-10727,2026-04-05,Excel for Beginners,Online,1,295,295,Public sector,Amira Khan,Confirmed
+BK-10732,2026-04-05,Excel Advanced,In-house,14,395,5530,Retail,Amira Khan,Confirmed
+BK-10746,2026-04-05,Excel Advanced,Online,1,395,395,Education,Dev Patel,Confirmed
+BK-10748,2026-04-07,Excel Advanced,Online,3,395,1185,Manufacturing,Ben Hollis,Confirmed
+BK-10722,2026-04-09,Excel for Beginners,Online,1,295,295,Public sector,Chloe Martin,Confirmed
+BK-10754,2026-04-09,Leadership Foundations,In-house,10,695,6950,Retail,Dev Patel,Confirmed
+BK-10705,2026-04-10,Excel for Beginners,Classroom,1,295,295,Education,Chloe Martin,Confirmed
+BK-10734,2026-04-10,Customer Service Excellence,Online,2,275,550,Finance,Dev Patel,Confirmed
+BK-10751,2026-04-10,Customer Service Excellence,Classroom,1,275,275,Finance,Ben Hollis,Cancelled
+BK-10708,2026-04-11,Time Management,In-house,7,245,1715,Retail,Dev Patel,Confirmed
+BK-10714,2026-04-11,Presentation Skills,Online,3,345,1035,Finance,Chloe Martin,Confirmed
+BK-10739,2026-04-13,Excel for Beginners,Online,1,295,295,Public sector,Chloe Martin,Confirmed
+BK-10700,2026-04-14,Excel Advanced,Classroom,3,395,1185,Finance,Dev Patel,Confirmed
+BK-10730,2026-04-14,Claude for Business,Classroom,4,495,1980,Public sector,Dev Patel,Confirmed
+BK-10711,2026-04-15,Presentation Skills,Classroom,3,345,1035,Retail,Dev Patel,Confirmed
+BK-10733,2026-04-15,Claude for Business,Online,4,495,1980,Manufacturing,Ben Hollis,Confirmed
+BK-10719,2026-04-18,Customer Service Excellence,Online,3,275,825,Retail,Chloe Martin,Confirmed
+BK-10725,2026-04-18,Leadership Foundations,Classroom,5,695,3475,Education,Amira Khan,Confirmed
+BK-10745,2026-04-18,Excel for Beginners,Classroom,2,295,590,Finance,Ben Hollis,Confirmed
+BK-10728,2026-04-19,Claude for Business,Classroom,1,495,495,Education,Amira Khan,Confirmed
+BK-10737,2026-04-20,Excel for Beginners,Online,3,295,885,Public sector,Ben Hollis,Confirmed
+BK-10742,2026-04-22,Excel for Beginners,Classroom,2,295,590,Public sector,Chloe Martin,Confirmed
+BK-10703,2026-04-28,Claude for Business,Online,5,495,2475,Finance,Chloe Martin,Confirmed
+BK-10776,2026-05-01,Excel for Beginners,Classroom,5,295,1475,Healthcare,Dev Patel,Confirmed
+BK-10788,2026-05-03,Leadership Foundations,Online,2,695,1390,Education,Dev Patel,Cancelled
+BK-10757,2026-05-04,Excel Advanced,Online,4,395,1580,Finance,Chloe Martin,Confirmed
+BK-10759,2026-05-05,Claude for Business,Classroom,1,495,495,Finance,Dev Patel,Confirmed
+BK-10779,2026-05-05,Customer Service Excellence,Classroom,3,275,825,Retail,Chloe Martin,Confirmed
+BK-10807,2026-05-05,Excel for Beginners,Online,1,295,295,Public sector,Dev Patel,Confirmed
+BK-10801,2026-05-06,Project Management Essentials,Online,3,595,1785,Education,Amira Khan,Confirmed
+BK-10760,2026-05-07,Time Management,In-house,6,245,1470,Finance,Ben Hollis,Confirmed
+BK-10808,2026-05-07,Customer Service Excellence,Classroom,4,275,1100,Healthcare,Amira Khan,Confirmed
+BK-10773,2026-05-09,Excel for Beginners,Online,2,295,590,Healthcare,Dev Patel,Confirmed
+BK-10814,2026-05-10,Project Management Essentials,Online,1,595,595,Public sector,Ben Hollis,Confirmed
+BK-10795,2026-05-11,Project Management Essentials,Online,3,595,1785,Public sector,Ben Hollis,Confirmed
+BK-10796,2026-05-11,Customer Service Excellence,In-house,9,275,2475,Manufacturing,Chloe Martin,Confirmed
+BK-10767,2026-05-14,Excel for Beginners,Classroom,3,295,885,Finance,Chloe Martin,Confirmed
+BK-10810,2026-05-15,Excel for Beginners,Online,5,295,1475,Retail,Dev Patel,Cancelled
+BK-10813,2026-05-17,Time Management,Online,4,245,980,Retail,Amira Khan,Cancelled
+BK-10769,2026-05-18,Claude for Business,Online,1,495,495,Manufacturing,Amira Khan,Confirmed
+BK-10784,2026-05-18,Time Management,Classroom,4,245,980,Finance,Ben Hollis,Confirmed
+BK-10804,2026-05-18,Excel for Beginners,Online,1,295,295,Public sector,Chloe Martin,Cancelled
+BK-10772,2026-05-20,Excel for Beginners,Online,4,295,1180,Manufacturing,Chloe Martin,Confirmed
+BK-10761,2026-05-21,Customer Service Excellence,Online,4,275,1100,Retail,Chloe Martin,Cancelled
+BK-10797,2026-05-22,Excel Advanced,Online,3,395,1185,Finance,Dev Patel,Confirmed
+BK-10764,2026-05-24,Presentation Skills,Online,5,345,1725,Manufacturing,Dev Patel,Confirmed
+BK-10800,2026-05-25,Time Management,Classroom,5,245,1225,Finance,Dev Patel,Confirmed
+BK-10787,2026-05-26,Customer Service Excellence,Classroom,5,275,1375,Healthcare,Chloe Martin,Confirmed
+BK-10781,2026-05-27,Leadership Foundations,Online,1,695,695,Finance,Ben Hollis,Confirmed
+BK-10790,2026-05-27,Leadership Foundations,In-house,10,695,6950,Manufacturing,Amira Khan,Confirmed
+BK-10792,2026-05-27,Claude for Business,Online,1,495,495,Education,Dev Patel,Confirmed
+BK-10822,2026-06-01,Claude for Business,Classroom,5,495,2475,Education,Ben Hollis,Confirmed
+BK-10838,2026-06-01,Claude for Business,In-house,8,495,3960,Manufacturing,Ben Hollis,Confirmed
+BK-10832,2026-06-04,Project Management Essentials,Online,5,595,2975,Finance,Dev Patel,Confirmed
+BK-10861,2026-06-04,Excel for Beginners,In-house,10,295,2950,Manufacturing,Chloe Martin,Confirmed
+BK-10848,2026-06-07,Claude for Business,Online,2,495,990,Retail,Amira Khan,Confirmed
+BK-10852,2026-06-07,Presentation Skills,Online,1,345,345,Public sector,Ben Hollis,Confirmed
+BK-10853,2026-06-07,Presentation Skills,In-house,12,345,4140,Finance,Ben Hollis,Confirmed
+BK-10856,2026-06-07,Claude for Business,Classroom,1,495,495,Manufacturing,Amira Khan,Confirmed
+BK-10858,2026-06-07,Claude for Business,Classroom,1,495,495,Retail,Amira Khan,Confirmed
+BK-10817,2026-06-08,Claude for Business,Online,3,495,1485,Healthcare,Amira Khan,Confirmed
+BK-10855,2026-06-08,Excel for Beginners,Online,4,295,1180,Finance,Amira Khan,Confirmed
+BK-10833,2026-06-09,Presentation Skills,Online,3,345,1035,Manufacturing,Ben Hollis,Confirmed
+BK-10835,2026-06-09,Excel Advanced,In-house,12,395,4740,Healthcare,Ben Hollis,Confirmed
+BK-10818,2026-06-10,Excel for Beginners,Online,4,295,1180,Retail,Dev Patel,Cancelled
+BK-10844,2026-06-10,Excel for Beginners,Online,5,295,1475,Public sector,Ben Hollis,Confirmed
+BK-10819,2026-06-11,Claude for Business,Online,5,495,2475,Public sector,Amira Khan,Confirmed
+BK-10843,2026-06-13,Excel for Beginners,In-house,7,295,2065,Education,Dev Patel,Confirmed
+BK-10820,2026-06-14,Leadership Foundations,Classroom,1,695,695,Education,Dev Patel,Confirmed
+BK-10862,2026-06-14,Project Management Essentials,Online,5,595,2975,Manufacturing,Dev Patel,Confirmed
+BK-10842,2026-06-17,Excel Advanced,Online,1,395,395,Manufacturing,Chloe Martin,Confirmed
+BK-10851,2026-06-17,Excel for Beginners,Classroom,5,295,1475,Public sector,Ben Hollis,Confirmed
+BK-10823,2026-06-20,Claude for Business,Online,2,495,990,Public sector,Ben Hollis,Confirmed
+BK-10825,2026-06-22,Claude for Business,Classroom,1,495,495,Public sector,Ben Hollis,Confirmed
+BK-10841,2026-06-24,Project Management Essentials,Classroom,1,595,595,Healthcare,Dev Patel,Confirmed
+BK-10845,2026-06-24,Presentation Skills,Online,2,345,690,Finance,Dev Patel,Confirmed
+BK-10830,2026-06-27,Project Management Essentials,Online,3,595,1785,Retail,Ben Hollis,Confirmed
+BK-10828,2026-06-28,Claude for Business,Classroom,3,495,1485,Public sector,Dev Patel,Cancelled
+BK-10865,2026-07-01,Customer Service Excellence,Online,2,275,550,Public sector,Amira Khan,Confirmed
+BK-10867,2026-07-01,Project Management Essentials,Classroom,1,595,595,Healthcare,Chloe Martin,Confirmed
+BK-10886,2026-07-01,Presentation Skills,Online,4,345,1380,Healthcare,Ben Hollis,Confirmed
+BK-10897,2026-07-02,Leadership Foundations,Classroom,1,695,695,Healthcare,Dev Patel,Confirmed
+BK-10889,2026-07-04,Excel for Beginners,Classroom,5,295,1475,Finance,Chloe Martin,Confirmed
+BK-10889,2026-07-04,Excel for Beginners,Classroom,5,295,1475,Finance,Chloe Martin,Confirmed
+BK-10872,2026-07-05,Excel Advanced,In-house,14,395,5530,Manufacturing,Dev Patel,Confirmed
+BK-10892,2026-07-11,Project Management Essentials,Online,2,595,1190,Retail,Amira Khan,Confirmed
+BK-10892,2026-07-11,Project Management Essentials,Online,2,595,1190,Retail,Amira Khan,Confirmed
+BK-10894,2026-07-11,Project Management Essentials,Classroom,4,595,2380,Retail,Chloe Martin,Confirmed
+BK-10882,2026-07-13,Excel for Beginners,In-house,13,295,3835,Education,Ben Hollis,Confirmed
+BK-10873,2026-07-16,Customer Service Excellence,In-house,14,275,3850,Retail,Amira Khan,Confirmed
+BK-10869,2026-07-17,Project Management Essentials,Classroom,2,595,1190,Healthcare,Amira Khan,Confirmed
+BK-10887,2026-07-17,Leadership Foundations,Classroom,5,695,3475,Education,Dev Patel,Confirmed
+BK-10902,2026-07-17,Presentation Skills,Online,1,345,345,Education,Ben Hollis,Confirmed
+BK-10866,2026-07-21,Claude for Business,Online,3,495,1485,Public sector,Chloe Martin,Confirmed
+BK-10877,2026-07-22,Excel for Beginners,Online,4,295,1180,Public sector,Ben Hollis,Confirmed
+BK-10875,2026-07-23,Excel for Beginners,Online,2,295,590,Retail,Chloe Martin,Confirmed
+BK-10884,2026-07-24,Excel for Beginners,Online,1,295,295,Retail,Chloe Martin,Confirmed
+BK-10899,2026-07-24,Claude for Business,Classroom,4,495,1980,Public sector,Amira Khan,Confirmed
+BK-10868,2026-07-26,Leadership Foundations,Online,1,695,695,Education,Ben Hollis,Confirmed
+BK-10880,2026-07-26,Claude for Business,Classroom,4,495,1980,Manufacturing,Dev Patel,Confirmed
+BK-10898,2026-07-26,Excel for Beginners,Classroom,5,295,1475,Retail,Chloe Martin,Confirmed
+BK-10891,2026-07-27,Presentation Skills,In-house,6,345,2070,Retail,Ben Hollis,Confirmed
+BK-10918,2026-08-05,Time Management,In-house,7,245,1715,Education,Amira Khan,Confirmed
+BK-10922,2026-08-06,Claude for Business,Online,1,495,495,Healthcare,Amira Khan,Confirmed
+BK-10919,2026-08-07,Excel for Beginners,Online,4,295,1180,Education,Dev Patel,Confirmed
+BK-10927,2026-08-11,Project Management Essentials,Online,5,595,2975,Retail,Amira Khan,Confirmed
+BK-10916,2026-08-12,Customer Service Excellence,Online,3,275,825,Manufacturing,Dev Patel,Confirmed
+BK-10911,2026-08-14,Claude for Business,Online,2,495,990,Healthcare,Amira Khan,Confirmed
+BK-10906,2026-08-17,Excel Advanced,Online,4,395,1580,Public sector,Dev Patel,Confirmed
+BK-10923,2026-08-19,Excel Advanced,In-house,7,395,2765,Public sector,Ben Hollis,Confirmed
+BK-10913,2026-08-23,Leadership Foundations,Online,5,695,3475,Finance,Amira Khan,Confirmed
+BK-10926,2026-08-24,Customer Service Excellence,Online,5,275,1375,Retail,Chloe Martin,Confirmed
+BK-10909,2026-08-26,Excel for Beginners,In-house,9,295,2655,Retail,Dev Patel,Confirmed
+BK-10903,2026-08-28,Excel for Beginners,Online,1,295,295,Retail,Ben Hollis,Confirmed
+BK-10968,2026-09-01,Project Management Essentials,Classroom,2,595,1190,Retail,Amira Khan,Confirmed
+BK-10934,2026-09-02,Customer Service Excellence,Classroom,3,275,825,Education,Chloe Martin,Confirmed
+BK-10943,2026-09-04,Presentation Skills,In-house,11,345,3795,Finance,Chloe Martin,Confirmed
+BK-10977,2026-09-04,Claude for Business,Online,5,495,2475,Finance,Chloe Martin,Confirmed
+BK-10963,2026-09-06,Presentation Skills,Online,4,345,1380,Education,Dev Patel,Confirmed
+BK-10983,2026-09-06,Claude for Business,In-house,6,495,2970,Finance,Chloe Martin,Confirmed
+BK-10966,2026-09-07,Excel Advanced,Classroom,4,395,1580,Finance,Dev Patel,Confirmed
+BK-10932,2026-09-09,Project Management Essentials,In-house,7,595,4165,Finance,Chloe Martin,Confirmed
+BK-10937,2026-09-10,Presentation Skills,In-house,7,345,2415,Healthcare,Amira Khan,Confirmed
+BK-10971,2026-09-10,Time Management,Online,4,245,980,Public sector,Chloe Martin,Confirmed
+BK-10945,2026-09-13,Excel for Beginners,Online,3,295,885,Finance,Ben Hollis,Cancelled
+BK-10961,2026-09-13,Project Management Essentials,Classroom,3,595,1785,Manufacturing,Ben Hollis,Confirmed
+BK-10980,2026-09-13,Claude for Business,Online,1,495,495,Finance,Dev Patel,Confirmed
+BK-10939,2026-09-14,Excel for Beginners,Classroom,1,295,295,Healthcare,Dev Patel,Confirmed
+BK-10956,2026-09-14,Presentation Skills,In-house,10,345,3450,Retail,Chloe Martin,Confirmed
+BK-10987,2026-09-15,Customer Service Excellence,In-house,13,275,3575,Retail,Dev Patel,Confirmed
+BK-10990,2026-09-17,Leadership Foundations,Online,5,695,3475,Retail,Amira Khan,Confirmed
+BK-10982,2026-09-18,Excel for Beginners,Online,3,295,885,Retail,Chloe Martin,Confirmed
+BK-10953,2026-09-19,Presentation Skills,Online,1,345,345,Healthcare,Ben Hollis,Confirmed
+BK-10975,2026-09-19,Excel for Beginners,Online,3,295,885,Retail,Amira Khan,Confirmed
+BK-10948,2026-09-21,Presentation Skills,Classroom,1,345,345,Finance,Chloe Martin,Confirmed
+BK-10955,2026-09-21,Excel Advanced,Classroom,5,395,1975,Education,Chloe Martin,Confirmed
+BK-10976,2026-09-21,Claude for Business,Online,4,495,1980,Finance,Dev Patel,Confirmed
+BK-10984,2026-09-22,Claude for Business,In-house,6,495,2970,Manufacturing,Chloe Martin,Confirmed
+BK-10929,2026-09-23,Project Management Essentials,Online,2,595,1190,Public sector,Dev Patel,Confirmed
+BK-10972,2026-09-23,Excel for Beginners,Online,4,295,1180,Healthcare,Dev Patel,Confirmed
+BK-10936,2026-09-24,Customer Service Excellence,Online,4,275,1100,Manufacturing,Chloe Martin,Confirmed
+BK-10942,2026-09-24,Claude for Business,Classroom,5,495,2475,Public sector,Amira Khan,Confirmed
+BK-10958,2026-09-24,Leadership Foundations,Online,3,695,2085,Education,Amira Khan,Cancelled
+BK-10951,2026-09-28,Customer Service Excellence,In-house,8,275,2200,Public sector,Amira Khan,Cancelled
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+(function(){
+  const raw = d3.csvParse(document.getElementById('bookings-csv').textContent.trim());
+  const sources = { bookings: { status:'ok', data: raw } };
+  const calcs = {}, draws = [], cache = {};
+  const defaults = { course:'', from:'', to:'' };
+  let params = Object.assign({}, defaults);
+  try { const q = new URLSearchParams(location.search); for (const k in defaults) if (q.get(k)) params[k] = q.get(k); } catch(e){}
+  const cs = getComputedStyle(document.documentElement);
+  function data(id){
+    if (sources[id]) return sources[id];
+    if (calcs[id]) {
+      if (!cache[id]) { const c = calcs[id]; cache[id] = { status:'ok', data: c.fn(...c.inputs.map(i => data(i).data)) }; }
+      return cache[id];
+    }
+    return { status:'missing', data: [] };
+  }
+  function render(){
+    for (const [name, fn] of draws)
+      document.querySelectorAll('[data-draw="'+name+'"]').forEach(el => { try { fn(el); } catch(e){ console.error(name, e); } });
+  }
+  function syncUrl(){
+    try { const q = new URLSearchParams(); for (const k in params) if (params[k]) q.set(k, params[k]);
+      history.replaceState(null,'', location.pathname + (q.toString() ? '?' + q : '')); } catch(e){}
+  }
+  window.dash = {
+    colors: [cs.getPropertyValue('--series-1').trim() || '#c96442', cs.getPropertyValue('--series-2').trim() || '#5a7fb5'],
+    calc: (id, def) => { calcs[id] = def; },
+    loader: () => {},
+    data,
+    draw: (name, fn) => { draws.push([name, fn]); },
+    onData: (fn) => { draws.push(['__never__', fn]); },
+    params: () => Object.assign({}, params),
+    setParams: (p) => { Object.assign(params, p); syncUrl(); render(); },
+    resetParams: () => { params = Object.assign({}, defaults); syncUrl(); render(); },
+    refresh: () => {},
+    _render: render
+  };
+  let t; window.addEventListener('resize', () => { clearTimeout(t); t = setTimeout(render, 120); });
+})();
+</script>
+<script>
+const gbp = (v) => (v < 0 ? '−' : '') + '£' + d3.format(',.0f')(Math.abs(v));
+const signedGbp = (v) => (v > 0 ? '+' : v < 0 ? '−' : '') + '£' + d3.format(',.0f')(Math.abs(v));
+const fmtDate = d3.utcFormat('%-d %b %Y');
+const parseISO = (s) => new Date(s + 'T00:00:00Z');
+
+dash.calc('clean', {
+  title: 'Bookings, duplicates removed',
+  description: 'Every booking once: a row identical to an earlier row is dropped, and numbers are typed.',
+  inputs: ['bookings'],
+  fn: (bookings) => {
+    const seen = new Set();
+    const out = [];
+    for (const r of bookings) {
+      const key = [r.ref, r.date, r.course, r.delivery, r.delegates, r.price, r.total, r.sector, r.owner, r.status].join('|');
+      if (seen.has(key)) continue;
+      seen.add(key);
+      const m = +r.date.slice(5, 7);
+      out.push({
+        ref: r.ref, date: r.date, month: r.date.slice(0, 7),
+        half: (m >= 4 && m <= 9) ? 'Apr–Sep' : 'Oct–Mar',
+        course: r.course, delivery: r.delivery,
+        delegates: +r.delegates, price: +r.price, total: +r.total,
+        sector: r.sector, owner: r.owner, status: r.status
+      });
+    }
+    return out;
+  }
+});
+
+dash.calc('halves', {
+  title: 'Confirmed revenue by course and half-year',
+  description: 'Oct–Mar against Apr–Sep, confirmed bookings only, duplicates removed.',
+  inputs: ['clean'],
+  fn: (clean) => {
+    const byCourse = new Map();
+    for (const r of clean) {
+      if (r.status !== 'Confirmed') continue;
+      const o = byCourse.get(r.course) || { course: r.course, oct_mar: 0, apr_sep: 0 };
+      if (r.half === 'Oct–Mar') o.oct_mar += r.total; else o.apr_sep += r.total;
+      byCourse.set(r.course, o);
+    }
+    return [...byCourse.values()]
+      .map((o) => ({ ...o, change: o.apr_sep - o.oct_mar, change_pct: o.oct_mar ? (o.apr_sep - o.oct_mar) / o.oct_mar : null }))
+      .sort((a, b) => b.change - a.change);
+  }
+});
+
+function allRows() {
+  const g = dash.data('clean');
+  return g.status === 'ok' ? g.data : null;
+}
+function selected() {
+  const all = allRows();
+  if (!all) return null;
+  const p = dash.params();
+  return all.filter((r) => (!p.course || r.course === p.course) && (!p.from || r.date >= p.from) && (!p.to || r.date <= p.to));
+}
+function placeholder(el) {
+  el.replaceChildren();
+  el.textContent = dash.data('clean').status === 'error' ? 'Failed to load' : '—';
+}
+const isConfirmed = (r) => r.status === 'Confirmed';
+const isCancelled = (r) => r.status === 'Cancelled';
+
+function scopeText(rows) {
+  const p = dash.params();
+  const all = allRows() || [];
+  const dates = (all.length ? all : rows).map((r) => r.date).sort();
+  const lo = p.from || dates[0];
+  const hi = p.to || dates[dates.length - 1];
+  return (p.course || 'all courses') + ', ' + (lo ? fmtDate(parseISO(lo)) : '—') + ' to ' + (hi ? fmtDate(parseISO(hi)) : '—');
+}
+
+/* Controls */
+dash.draw('course_select', (sel) => {
+  const all = allRows();
+  const courses = all ? [...new Set(all.map((r) => r.course))].sort() : [];
+  sel.replaceChildren(new Option('All courses', ''), ...courses.map((c) => new Option(c, c)));
+  sel.value = dash.params().course || '';
+  sel.onchange = () => dash.setParams({ course: sel.value || '' });
+});
+for (const [name, key] of [['from_date', 'from'], ['to_date', 'to']]) {
+  dash.draw(name, (inp) => {
+    const all = allRows();
+    if (all && all.length) {
+      const ds = all.map((r) => r.date).sort();
+      inp.min = ds[0];
+      inp.max = ds[ds.length - 1];
+    }
+    if (document.activeElement !== inp) inp.value = dash.params()[key] || '';
+    inp.onchange = () => {
+      if (!inp.value) dash.setParams({ [key]: '' });
+      else if (inp.validity.valid) dash.setParams({ [key]: inp.value });
+    };
+    inp.onblur = () => { inp.value = dash.params()[key] || ''; };
+  });
+}
+for (const b of document.querySelectorAll('#cb-reset')) b.addEventListener('click', () => dash.resetParams());
+
+dash.draw('win', (el) => {
+  const rows = selected();
+  if (!rows) return placeholder(el);
+  el.textContent = scopeText(rows);
+});
+
+/* Summary line and headline numbers */
+dash.draw('s_rev', (el) => {
+  const rows = selected();
+  if (!rows) return placeholder(el);
+  el.textContent = gbp(d3.sum(rows.filter(isConfirmed), (r) => r.total));
+});
+dash.draw('s_scope', (el) => {
+  const rows = selected();
+  if (!rows) return placeholder(el);
+  el.textContent = scopeText(rows);
+});
+dash.draw('s_top', (el) => {
+  const rows = selected();
+  if (!rows) return placeholder(el);
+  const m = d3.rollups(rows.filter(isConfirmed), (v) => d3.sum(v, (r) => r.total), (r) => r.course).sort((a, b) => b[1] - a[1]);
+  el.textContent = m.length ? m[0][0] + ' (' + gbp(m[0][1]) + ')' : 'none';
+});
+dash.draw('s_cancel', (el) => {
+  const rows = selected();
+  if (!rows) return placeholder(el);
+  el.textContent = String(rows.filter(isCancelled).length);
+});
+dash.draw('k_rev', (el) => {
+  const rows = selected();
+  if (!rows) return placeholder(el);
+  el.textContent = gbp(d3.sum(rows.filter(isConfirmed), (r) => r.total));
+});
+dash.draw('k_rev_note', (el) => {
+  const rows = selected();
+  if (!rows) return placeholder(el);
+  el.textContent = 'Confirmed only, duplicates removed';
+});
+dash.draw('k_bookings', (el) => {
+  const rows = selected();
+  if (!rows) return placeholder(el);
+  el.textContent = d3.format(',')(rows.filter(isConfirmed).length);
+});
+dash.draw('k_bookings_note', (el) => {
+  const rows = selected();
+  if (!rows) return placeholder(el);
+  const c = rows.filter(isConfirmed);
+  el.textContent = c.length ? 'Average ' + gbp(d3.sum(c, (r) => r.total) / c.length) + ' a booking' : 'No confirmed bookings';
+});
+dash.draw('k_delegates', (el) => {
+  const rows = selected();
+  if (!rows) return placeholder(el);
+  el.textContent = d3.format(',')(d3.sum(rows.filter(isConfirmed), (r) => r.delegates));
+});
+dash.draw('k_delegates_note', (el) => {
+  const rows = selected();
+  if (!rows) return placeholder(el);
+  el.textContent = 'On confirmed bookings';
+});
+dash.draw('k_cancel', (el) => {
+  const rows = selected();
+  if (!rows) return placeholder(el);
+  el.textContent = String(rows.filter(isCancelled).length);
+});
+dash.draw('k_cancel_note', (el) => {
+  const rows = selected();
+  if (!rows) return placeholder(el);
+  el.textContent = rows.length ? d3.format('.1%')(rows.filter(isCancelled).length / rows.length) + ' of all bookings' : 'No bookings';
+});
+
+/* Charts */
+function monthsInRange() {
+  const all = allRows() || [];
+  const p = dash.params();
+  const lo = p.from ? p.from.slice(0, 7) : '';
+  const hi = p.to ? p.to.slice(0, 7) : '9999-99';
+  return [...new Set(all.map((r) => r.month))].sort().filter((m) => m >= lo && m <= hi);
+}
+
+function barChart(el, items, o) {
+  el.replaceChildren();
+  el.style.position = 'relative';
+  const W = Math.max(el.clientWidth, 220);
+  const H = 230;
+  const svg = d3.create('svg').attr('width', W).attr('height', H).attr('role', 'img').attr('aria-label', o.aria);
+  el.appendChild(svg.node());
+  const maxV = d3.max(items, (d) => d.value) || 0;
+  const yScale = d3.scaleLinear().domain([0, Math.max(maxV, o.integer ? 4 : 1) * 1.08]).nice();
+  let ticks = yScale.ticks(4);
+  if (o.integer) ticks = ticks.filter(Number.isInteger);
+  const probe = svg.append('g');
+  let wMax = 0;
+  for (const t of ticks) {
+    const tx = probe.append('text').attr('class', 'cb-tick').text(o.fmtTick(t));
+    wMax = Math.max(wMax, tx.node().getComputedTextLength() || o.fmtTick(t).length * 7);
+  }
+  probe.remove();
+  const m = { t: 20, r: 8, b: 40, l: Math.ceil(wMax) + 10 };
+  const x = d3.scaleBand().domain(items.map((d) => d.key)).range([m.l, W - m.r]).padding(0.25);
+  const y = yScale.range([H - m.b, m.t]);
+  const g = svg.append('g');
+  for (const t of ticks) {
+    g.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(t)).attr('y2', y(t)).style('stroke', 'var(--cds-chart-grid)');
+    g.append('text').attr('class', 'cb-tick').attr('x', m.l - 6).attr('y', y(t)).attr('dy', '0.32em').attr('text-anchor', 'end').text(o.fmtTick(t));
+  }
+  g.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(0)).attr('y2', y(0)).style('stroke', 'var(--cds-chart-axis)');
+  g.selectAll('rect.bar').data(items).join('rect').attr('class', 'bar')
+    .attr('x', (d) => x(d.key)).attr('width', x.bandwidth())
+    .attr('y', (d) => y(d.value)).attr('height', (d) => Math.max(0, y(0) - y(d.value)))
+    .attr('rx', 2).style('fill', o.color);
+  const bw = x.bandwidth();
+  g.selectAll('text.barlab').data(items.filter((d) => d.value > 0)).join('text').attr('class', 'cb-barlab')
+    .attr('x', (d) => x(d.key) + bw / 2).attr('y', (d) => y(d.value) - 4).attr('text-anchor', 'middle')
+    .text((d) => { const opts = o.labels(d.value); return opts.find((s) => s.length * 6.4 <= bw + 6) || ''; });
+  g.selectAll('text.xlab').data(items).join('text').attr('class', 'cb-tick')
+    .attr('x', (d) => x(d.key) + bw / 2).attr('y', H - m.b + 14).attr('text-anchor', 'middle')
+    .each(function (d, i) {
+      const t = d3.select(this);
+      t.append('tspan').text(d.label);
+      if (d.sub) t.append('tspan').attr('x', x(d.key) + bw / 2).attr('dy', '1.2em').text(d.sub);
+    });
+  const tip = document.createElement('div');
+  tip.className = 'cb-tip';
+  tip.hidden = true;
+  const tipTitle = document.createElement('b');
+  const tipBody = document.createElement('span');
+  tip.append(tipTitle, tipBody);
+  el.appendChild(tip);
+  const show = (d) => {
+    tipTitle.textContent = d.tipTitle;
+    tipBody.textContent = d.tipBody;
+    tip.hidden = false;
+    const tw = tip.offsetWidth;
+    const cx = x(d.key) + bw / 2;
+    tip.style.left = Math.max(0, Math.min(W - tw, cx - tw / 2)) + 'px';
+    tip.style.top = Math.max(0, y(d.value) - tip.offsetHeight - 8) + 'px';
+  };
+  g.selectAll('rect.hit').data(items).join('rect').attr('class', 'hit')
+    .attr('x', (d) => x(d.key) - x.step() * 0.125).attr('width', x.step()).attr('y', m.t).attr('height', H - m.t - m.b)
+    .style('fill', 'transparent')
+    .on('pointerenter', (e, d) => show(d)).on('pointermove', (e, d) => show(d)).on('pointerleave', () => { tip.hidden = true; })
+    .on('click', (e, d) => show(d));
+}
+
+function monthItems(rows, valueOf, tipBody) {
+  const fmtM = d3.utcFormat('%b');
+  const fmtLong = d3.utcFormat('%B %Y');
+  return monthsInRange().map((mo, i) => {
+    const d = parseISO(mo + '-01');
+    const v = valueOf(rows.filter((r) => r.month === mo));
+    return {
+      key: mo, label: fmtM(d), sub: (i === 0 || mo.slice(5) === '01') ? String(d.getUTCFullYear()) : '',
+      value: v, tipTitle: fmtLong(d), tipBody: tipBody(v)
+    };
+  });
+}
+
+dash.draw('chart_rev', (el) => {
+  const rows = selected();
+  if (!rows) return placeholder(el);
+  const items = monthItems(rows, (v) => d3.sum(v.filter(isConfirmed), (r) => r.total), (v) => gbp(v) + ' confirmed');
+  if (!items.length) { el.replaceChildren(); el.textContent = 'No months in this date range.'; return; }
+  barChart(el, items, {
+    aria: 'Bar chart of confirmed revenue by month',
+    color: dash.colors[0], integer: false,
+    fmtTick: (v) => '£' + d3.format('~s')(v),
+    labels: (v) => ['£' + (v / 1000).toFixed(1) + 'k', '£' + Math.round(v / 1000) + 'k']
+  });
+});
+dash.draw('chart_cancel', (el) => {
+  const rows = selected();
+  if (!rows) return placeholder(el);
+  const items = monthItems(rows, (v) => v.filter(isCancelled).length, (v) => v + (v === 1 ? ' booking cancelled' : ' bookings cancelled'));
+  if (!items.length) { el.replaceChildren(); el.textContent = 'No months in this date range.'; return; }
+  barChart(el, items, {
+    aria: 'Bar chart of cancelled bookings by month',
+    color: dash.colors[1] || dash.colors[0], integer: true,
+    fmtTick: (v) => String(v),
+    labels: (v) => [String(v)]
+  });
+});
+
+dash.draw('course_rank', (el) => {
+  const rows = selected();
+  if (!rows) return placeholder(el);
+  el.replaceChildren();
+  const m = d3.rollups(rows.filter(isConfirmed), (v) => d3.sum(v, (r) => r.total), (r) => r.course).sort((a, b) => b[1] - a[1]);
+  if (!m.length) { el.textContent = 'No confirmed bookings in this selection.'; return; }
+  const max = m[0][1] || 1;
+  for (const [name, val] of m) {
+    const row = document.createElement('div');
+    row.className = 'cb-rank';
+    const head = document.createElement('div');
+    head.className = 'cb-rank-head';
+    const n = document.createElement('span');
+    n.textContent = name;
+    const v = document.createElement('span');
+    v.className = 'cb-rank-val';
+    v.textContent = gbp(val);
+    head.append(n, v);
+    const track = document.createElement('div');
+    track.className = 'cb-track';
+    const fill = document.createElement('div');
+    fill.className = 'cb-fill';
+    fill.style.width = (val / max * 100) + '%';
+    fill.style.background = dash.colors[0];
+    track.appendChild(fill);
+    row.append(head, track);
+    el.appendChild(row);
+  }
+});
+
+/* Tables */
+function td(text, cls) {
+  const c = document.createElement('td');
+  if (cls) c.className = cls;
+  c.textContent = text;
+  return c;
+}
+dash.draw('halves_body', (tb) => {
+  const g = dash.data('halves');
+  tb.replaceChildren();
+  if (g.status !== 'ok') return;
+  const p = dash.params();
+  for (const r of g.data.filter((x) => !p.course || x.course === p.course)) {
+    const tr = document.createElement('tr');
+    const dir = r.change > 0 ? 'cb-up' : r.change < 0 ? 'cb-down' : '';
+    const pct = r.change_pct === null ? '—' : d3.format('+.0%')(r.change_pct).replace('-', '−');
+    tr.append(td(r.course), td(gbp(r.oct_mar), 'num'), td(gbp(r.apr_sep), 'num'), td(signedGbp(r.change), 'num ' + dir), td(pct, 'num ' + dir));
+    tb.appendChild(tr);
+  }
+});
+dash.draw('bookings_count', (el) => {
+  const rows = selected();
+  if (!rows) return placeholder(el);
+  el.textContent = rows.length + (rows.length === 1 ? ' booking' : ' bookings') + ' (' + rows.filter(isCancelled).length + ' cancelled).';
+});
+dash.draw('bookings_body', (tb) => {
+  const rows = selected();
+  tb.replaceChildren();
+  if (!rows) return;
+  const sorted = rows.slice().sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+  for (const r of sorted) {
+    const tr = document.createElement('tr');
+    if (isCancelled(r)) tr.className = 'cb-cancelled';
+    tr.append(td(r.ref), td(fmtDate(parseISO(r.date))), td(r.course), td(r.delivery), td(String(r.delegates), 'num'), td(d3.format(',')(r.total), 'num'), td(r.sector), td(r.owner), td(r.status, isCancelled(r) ? 'cb-down' : ''));
+    tb.appendChild(tr);
+  }
+});
+
+dash._render();
+</script>
+</body>
+</html>
